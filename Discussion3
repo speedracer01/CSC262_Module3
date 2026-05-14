@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+
+public class ArraysandArrayList {
+public static void main(String[] args) {
+
+    // Greetings and purpose
+    System.out.println("Hello and welcome ");
+    System.out.println("This program will showcase Arrays and ArrayLists.");
+    System.out.println("");
+    System.out.println("First showcasing *** Arrays ***");
+
+    // Initializing the array and setting length for 3 indexes
+    int[] myarray = new int[3];
+
+    // Adding Elements to the indexes
+    myarray[0] = 10;
+    myarray[1] = 15;
+    myarray[2] = 20;
+    
+    System.out.println("Here are the elements of the array:");
+
+    // Print out all elements of each index
+    for (int a = 0; a < myarray.length; a++) {
+        System.out.println(myarray[a]);
+    }
+
+    // Print out length of Array 
+    System.out.println("Array length is: " + myarray.length);
+    System.out.println("");
+    System.out.println("Second Showcasing *** ArrayList ***");
+
+    // Initialize the ArrayList
+    ArrayList<Integer> numbers = new ArrayList<>();
+
+    // Add objects to ArrayList
+    numbers.add(5);
+    numbers.add(10);
+    numbers.add(15);
+    numbers.add(20);
+
+    System.out.println("The contents of this ArrayList are:");
+    
+    //Print out each object in ArrayList
+    for (int a = 0; a < numbers.size(); a++) {
+        System.out.println(numbers.get(a));
+    }
+
+    // Print out the total count of objects in ArrayList
+    System.out.println("This ArrayList length is: " + numbers.size());
+
+}
+
+}
